@@ -1,0 +1,362 @@
+/* Global Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+header {
+  background: #1e1e1e;
+  color: #fff;
+  padding: 15px 0;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #f9c74f;
+}
+
+main {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 20px auto;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+h1,
+h2,
+h3 {
+  color: #1e1e1e;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+#hero {
+  text-align: center;
+  background: url('images/hero.jpg') no-repeat center center/cover;
+  color: white;
+  padding: 80px 20px;
+  border-radius: 5px;
+}
+
+#hero h1 {
+  font-size: 3em;
+  margin: 0;
+}
+
+.highlight-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.highlight-item img {
+  width: 150px;
+  height: auto;
+  margin-right: 20px;
+  border-radius: 5px;
+}
+
+.service,
+.product {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.service img,
+.product img {
+  width: 200px;
+  height: auto;
+  margin-right: 20px;
+  border-radius: 5px;
+}
+
+form label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+form input[type='text'],
+form input[type='email'],
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+form button {
+  background-color: #1e1e1e;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #333;
+}
+
+footer .social-media i {
+  font-size: 60px;
+  margin: 10px;
+}
+/* Styles for Login and Signup Pages */
+section#login, section#signup {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+section#login h1, section#signup h1 {
+    margin-bottom: 20px;
+    color: #1e1e1e;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    text-align: left;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #1e1e1e;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+form button {
+    background-color: #1e1e1e;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #333;
+}
+
+p {
+    margin-top: 15px;
+    color: #555;
+}
+
+p a {
+    color: #f9c74f;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Improvements */
+footer .footer-content {
+    padding: 10px 20px;
+}
+
+footer .footer-content p, footer .contact-info p {
+    margin: 5px 0;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+  /* Style anchor tags as buttons */
+  footer {
+    color: white;
+    /* aur properties yahan ho sakti hain */
+}
+
+.button {
+    display: inline-block;
+    background-color: #1e1e1e;
+    color: #fff;
+    padding: 10px 15px;
+    text-align: center;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+    text-decoration: none;
+    margin-top: 15px;
+}
+
+.button:hover {
+    background-color: #333;
+}
+
+
+  main {
+    margin: 10px;
+    padding: 15px;
+  }
+
+  .highlight-item,
+  .service,
+  .product {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .highlight-item img,
+  .service img,
+  .product img {
+    margin: 0 0 15px 0;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  header,
+  footer {
+    padding: 10px 0;
+  }
+
+  nav ul li {
+    margin: 5px 0;
+  }
+
+  main {
+    padding: 10px;
+  }
+
+  #hero h1 {
+    font-size: 2em;
+  }
+}
+footer {
+  background: #1e1e1e;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+footer .footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+footer .footer-content p {
+  margin: 0;
+  flex: 1;
+  text-align: left;
+}
+
+footer .contact-info {
+  flex: 1;
+  text-align: right;
+}
+
+@media (max-width: 768px) {
+  footer {
+    flex-direction: column;
+  }
+
+  footer .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer .contact-info {
+    text-align: center;
+    margin-top: 10px;
+  }
+}
+@media (max-width: 768px) {
+    header nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    form {
+        width: 90%;
+    }
+
+    footer {
+        padding: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+
+    footer .contact-info {
+        margin-top: 15px;
+    }
+}
